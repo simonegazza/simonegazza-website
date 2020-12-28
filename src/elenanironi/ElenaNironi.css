@@ -1,0 +1,17 @@
+.elenaNironi {
+    position: fixed;
+    font-size: small;
+    padding-left: 2%;
+    bottom: 4%;
+    color: rgb(75, 75, 75);
+}
+.elenaNironiP {
+    display: inline
+}
+
+@media (max-width: 740px) {
+    .elenaNironi {
+        position: relative;
+        padding-bottom: 2em;
+    }
+}
