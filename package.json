@@ -12,8 +12,8 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "( [ -f ./src/statics/favicon.ico ] || aws s3 cp s3://simonegazza.me/resources/favicon.ico ./src/statics ) && react-scripts start",
-    "build": "cp ./src/statics/favicon.ico ./src/public/ && react-scripts build",
+    "start": "( [ -f ./src/statics/favicon.ico ] || aws s3 cp s3://simonegazza.me/resources/ ./src/statics ) && react-scripts start",
+    "build": "cp ./src/statics/favicon.ico ./src/public/ && aws s3 sync ./src/statics s3://simonegazza.me/resources && react-scripts build",
     "test": "react-scripts test",
     "deploy": "aws s3 sync ./src/statics s3://simonegazza.me/resources && aws s3 sync build/ s3://simonegazza.me"
   },
