@@ -1,0 +1,21 @@
+.name {
+    width: 100%;
+    text-align: left;
+    font-family: Graphik, regular;
+}
+
+.nameArrow {
+    display: inline;
+    padding-right: 1.8%;
+}
+
+.nameP {
+    display: inline;
+    padding-right: 1.2%;
+}
+
+.nameName {
+    display: inline;
+    font-weight: 100;
+    font-size: 260%;
+}

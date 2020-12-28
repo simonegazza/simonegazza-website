@@ -1,38 +1,45 @@
-.App {
-  text-align: center;
+.background {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position: fixed;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+    font-size: 100%;
+    color: white;
+    font-family: Graphik, regular;
+    font-weight: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app {
+    padding-top: 4%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.hi {
+    padding-top: 2.5%;
+    padding-left: 2%;
 }
 
-.App-link {
-  color: #61dafb;
+@font-face  {
+    font-family: "Graphik";
+    src: local("Graphik"), url("./fonts/GraphikRegular.otf") format('woff');
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Graphik";
+    src: local("Graphik"), url("./fonts/GraphikExtralight.otf") format('woff');
+    font-weight: 100;
+}
+@font-face {
+    font-family: "Graphik";
+    src: local("Graphik"), url("./fonts/GraphikLight.otf") format('woff');
+    font-weight: 200;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media (max-width: 740px) {
+    .mobileApp {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
 }
