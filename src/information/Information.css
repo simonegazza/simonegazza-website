@@ -1,0 +1,88 @@
+.information {
+    width: 100%;
+    margin-top: -5em;
+}
+
+.informationTableOuter {
+    padding-left: 9%;
+    border-collapse: separate; 
+    border-spacing: 0 5em;
+    width: 72%;
+}
+
+.cell {
+    vertical-align: top;
+    width: 35%;
+}
+
+.informationP {
+    font-weight: 200;
+    font-style: italic;
+    font-size: x-large;
+    text-align: left;
+    display: inline;
+}
+
+.informationArrow {
+    margin-left: 2%;
+    font-size: small;
+    display: inline;
+    vertical-align: 0.3em;
+}
+
+.informationTableInner {
+    display: inline;
+    border-spacing: 0.25em;
+    padding-right: 9%;
+}
+
+.certification {
+    font-style: italic;
+}
+
+.silTable {
+    border-collapse: separate; 
+    border-spacing: 0 1.2em;
+    margin-top: -1em;
+    display: inline;
+    padding-right: 8%;
+}
+.silTable td {
+    vertical-align: top;
+}
+
+@media (max-width: 740px) {
+    .informationTableOuter {
+        padding-left: 0%;
+        border-collapse: separate; 
+        border-spacing: 0 5em;
+    }
+
+    .cell {
+        vertical-align: top;
+        width: 50%;
+    }
+
+    .mobileSpacing {
+        height: fit-content;
+    }
+
+    .informationTableInner {
+        display: block;
+        width: 100%;
+        height: fit-content;
+        border-collapse: collapse; 
+        border-spacing: unset;
+        padding-right: 0px;
+        padding-bottom: 5%;
+    }
+
+    .silTable {
+        border-collapse: separate; 
+        border-spacing: 0px 0.4em;
+        padding-right: 100%;
+        padding-left: 0px;
+        margin-top: -3em;
+        width: 100%;
+    }
+}
