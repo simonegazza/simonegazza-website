@@ -15,6 +15,8 @@
     "start": "( [ -f ./src/statics/favicon.ico ] || aws s3 cp s3://simonegazza.me/resources/ ./src/statics ) && react-scripts start",
     "build": "cp ./src/statics/favicon.ico ./src/public/ && aws s3 sync ./src/statics s3://simonegazza.me/resources && react-scripts build",
     "test": "react-scripts test",
+    "sync:push:statics": "aws s3 sync ./src/statics s3://simonegazza.me/resources",
+    "sync:pull:statics": "aws s3 sync s3://simonegazza.me/resources ./src/statics",
     "deploy": "aws s3 sync ./src/statics s3://simonegazza.me/resources && aws s3 sync build/ s3://simonegazza.me"
   },
   "eslintConfig": {
