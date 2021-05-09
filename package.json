@@ -1,40 +1,11 @@
 {
   "name": "simonegazza-website",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.11.6",
-    "@testing-library/react": "^11.2.2",
-    "@testing-library/user-event": "^12.6.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-scripts": "4.0.1",
-    "web-vitals": "^0.2.4"
-  },
+  "dependencies": {},
   "scripts": {
-    "start": "( [ -f ./src/statics/favicon.ico ] || aws s3 cp s3://simonegazza.me/resources/ ./src/statics ) && react-scripts start",
-    "build": "cp ./src/statics/favicon.ico ./src/public/ && aws s3 sync ./src/statics s3://simonegazza.me/resources && react-scripts build",
-    "test": "react-scripts test",
-    "sync:push:statics": "aws s3 sync ./src/statics s3://simonegazza.me/resources",
-    "sync:pull:statics": "aws s3 sync s3://simonegazza.me/resources ./src/statics",
-    "deploy": "aws s3 sync ./src/statics s3://simonegazza.me/resources && aws s3 sync build/ s3://simonegazza.me"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "start": "open index.html",
+    "pull": "aws s3 cp s3://simonegazza.me/img/ ./img/ --recursive",
+    "push": "aws s3 sync ./img/ s3://simonegazza.me/img/"
   }
 }

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Simone Gazza</title>
+        <link rel="icon" href="img/favicon.ico">
+        <meta name="theme-color" content="#000000">
+        <link rel="stylesheet" href="css/index.css">
+        <script src="js/game-of-life.js"></script>
+    </head>
+    <body>
+        <noscript>Background available only if you enable javascript.</noscript>
+        <div class="background"><canvas id="canvas"></canvas></div>
+        <div class="page">
+            <div class="title">
+                <p class="front">→ </p>
+                <p class="front">Hi, I'm</p>
+                <h1 class="front">Simone Gazza</h1>
+                <table class="parameters">
+                    <tbody>
+                        <tr>
+                            <td>Size: </td>
+                            <td><input type="range" min="2" max="15" value="7" id="cellSize"></td>
+                        </tr>
+                        <tr>
+                            <td>Sparsity: </td>
+                            <td><input type="range" min="1" max="100" value="80" id="sparsity"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="center">
+                <div class="lefty">
+                    <img src="img/face-pic.png" alt="My face goes here" class="face-pic" />
+                    <p>I’m an italian Cloud Solution Architect, based in Parma.
+                    I really enjoy games that are Turing-complete and breaking them.
+                    In my spare time I like to watch Netflix and thinking about how I can improve things around me
+                    </p>
+                    <div class="left-footer">
+                        <div>
+                            <a href="https://www.instagram.com/simiraikkonen">
+                                <img src="img/ig.png" alt="instagram" class="left-footer-pic">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://github.com/simonegazza">
+                                <img src="img/github.png" alt="github" class="left-footer-pic">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="mailto:gazza.sim@gmail.com">
+                                <img src="img/email.png" alt="email" class="left-footer-pic">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="righty">
+                    <table class="information-table">
+                        <tbody>
+                            <tr>
+                                <td class="information-label">
+                                    <p><i>EDUCATION → </i></p>
+                                </td>
+                                <td>
+                                    <div>
+                                    <table class="inner-table">
+                                        <tbody>
+                                            <tr>
+                                                <td>2021 / today</td>
+                                            </tr>
+                                            <tr>
+                                                <td><i>Master Degree in<br>Computer Science</i></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Università degli studi di Parma</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Parma</td>
+                                            </tr>
+                                        </tbody>
+                                    <table class="inner-table">
+                                        <tbody>
+                                            <tr>
+                                                <td>2017 / 2021</td>
+                                            </tr>
+                                            <tr>
+                                                <td><i>Bachelor Degree in<br>Computer Science</i></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Università degli studi di Parma</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Parma</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="inner-table">
+                                        <tbody>
+                                            <tr>
+                                                <td>2012 / 2017</td>
+                                            </tr>
+                                            <tr>
+                                                <td><i>High School Diploma</i></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Liceo Scientifico G. Marconi</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Parma</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="information-label">
+                                    <p><i>WORK → </i></p>
+                                </td>
+                                <td>
+                                    <table class="inner-table">
+                                        <tbody>
+                                            <tr>
+                                                <td>2017 / 2020</td>
+                                            </tr>
+                                            <tr>
+                                                <td><i>AWS Cloud Solution Architect</i></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Soluzioni Futura</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Reggio Emilia</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="information-label">
+                                    <p><i>STUFF I LIKE → </i></p>
+                                </td>
+                                <td>
+                                    <table class="stuff-table">
+                                        <tbody>
+                                            <tr>
+                                                <td>Rust</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Haskell</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Java</td>
+                                            </tr>
+                                            <tr>
+                                                <td>DevOps</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="stuff-table">
+                                        <tbody>
+                                            <tr>
+                                                <td>Bash</td>
+                                            </tr>
+                                            <tr>
+                                                <td>SQL</td>
+                                            </tr>
+                                            <tr>
+                                                <td>JavaScript</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Software <br>Engineering</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="stuff-table">
+                                        <tbody>
+                                            <tr>
+                                                <td>Planning</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Adaptability</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Teamwork</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Problem <br>solving</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="stuff-table">
+                                        <tbody>
+                                            <tr>
+                                                <td>Archery</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Gaming</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Coding</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Hiking</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div>
+                <p>Design by
+                <a href="http://www.linkedin.com/in/elena-n-0a2798a0">Elena Nironi</a>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
