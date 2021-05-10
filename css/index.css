@@ -95,7 +95,7 @@ h1 {
     float: left;
     margin: 0;
     padding-top: 0;
-    padding-left: 10%;
+    padding-left: 5%;
 }
 
 .information-table {
@@ -140,5 +140,58 @@ h1 {
 .footer {
     position: relative;
     bottom: 0;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 200%;
+    }
+
+    .parameters {
+        display: none;
+    }
+
+    .lefty {
+        width: 100%;
+    }
+
+    .righty {
+        padding-top: 10%;
+        padding-left: 0%;
+    }
+
+    .information-label {
+        width: auto;
+        padding-right: 2rem;
+        line-height: unset;
+    }
+
+    .information-label p {
+        width: 125%;
+        margin-top: 0;
+    }
+
+    .information-table {
+        margin-top: unset;
+        border-spacing: 0 1.5rem;
+    }
+
+    .inner-table {
+        padding-right: 1rem;
+        padding-top: 0;
+        padding-bottom: 1rem;
+        border-spacing: 0 0.2rem;
+    }
+
+    .stuff-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stuff-table {
+        border-spacing: 0.5rem 0.2rem;
+        margin-top: unset;
+        font-size: large;
+    }
 }
 
