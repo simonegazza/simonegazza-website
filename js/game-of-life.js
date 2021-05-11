@@ -143,11 +143,39 @@ window.addEventListener("load", () => {
         if (y - 1 < 0) precedingCellCol = cols
         if (y + 1 >= cols) nextCellCol = 0
 
-        matrix[precedingCellRow][y] = 1
-        matrix[x][nextCellCol] = 1
-        matrix[nextCellRow][nextCellCol] = 1
-        matrix[nextCellRow][y] = 1
-        matrix[nextCellRow][precedingCellCol] = 1
+        const direction = Math.round(Math.random() * 4) + 1
+
+        if (direction <= 1) {
+            //Bottom Right
+            matrix[precedingCellRow][y] = 1
+            matrix[x][nextCellCol] = 1
+            matrix[nextCellRow][nextCellCol] = 1
+            matrix[nextCellRow][y] = 1
+            matrix[nextCellRow][precedingCellCol] = 1
+        } else if (direction > 1 && direction <= 2) {
+            //Top Right
+            matrix[precedingCellRow][nextCellCol] = 1
+            matrix[precedingCellRow][y] = 1
+            matrix[precedingCellRow][precedingCellCol] = 1
+            matrix[x][nextCellCol] = 1
+            matrix[nextCellRow][y] = 1
+        } else if (direction > 2 && direction <= 3) {
+            //Top Left
+            matrix[precedingCellRow][nextCellCol] = 1
+            matrix[precedingCellRow][y] = 1
+            matrix[precedingCellRow][precedingCellCol] = 1
+            matrix[x][precedingCellCol] = 1
+            matrix[nextCellRow][y] = 1
+        } else {
+            //Bottom Reft
+            matrix[precedingCellRow][y] = 1
+            matrix[x][precedingCellCol] = 1
+            matrix[nextCellRow][nextCellCol] = 1
+            matrix[nextCellRow][y] = 1
+            matrix[nextCellRow][precedingCellCol] = 1
+        }
+
+
     })
 
     cellSizeSlider = document.getElementById("cellSize")

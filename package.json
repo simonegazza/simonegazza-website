@@ -5,7 +5,8 @@
   "dependencies": {},
   "scripts": {
     "start": "open index.html",
-    "pull": "aws s3 cp s3://simonegazza.me/img/ ./img/ --recursive",
-    "push": "aws s3 sync ./img/ s3://simonegazza.me/img/"
+    "push-all": "aws s3 cp . s3://simonegazza.me/ --recursive",
+    "pull-images": "aws s3 cp s3://simonegazza.me/img/ ./img/ --recursive",
+    "push-images": "aws s3 sync ./img/ s3://simonegazza.me/img/"
   }
 }
