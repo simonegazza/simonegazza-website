@@ -1,3 +1,7 @@
+:root {
+    --left-width: 25%;
+}
+
 @font-face  {
     font-family: "Graphik";
     src: local("Graphik"), url("../fonts/GraphikRegular.otf") format("woff");
@@ -63,7 +67,7 @@ h1 {
 }
 
 .lefty {
-    width: 25%;
+    width: var(--left-width);
     float: left;
 }
 
@@ -96,6 +100,7 @@ h1 {
     margin: 0;
     padding-top: 0;
     padding-left: 5%;
+    width: calc(95% - var(--left-width));
 }
 
 .information-table {
@@ -137,12 +142,7 @@ h1 {
     margin-top: -0.6rem;
 }
 
-.footer {
-    position: relative;
-    bottom: 0;
-}
-
-@media (max-width: 600px) {
+@media (min-width: 0) and (max-width: 800px) {
     h1 {
         font-size: 200%;
     }
@@ -157,12 +157,12 @@ h1 {
 
     .righty {
         padding-top: 10%;
-        padding-left: 0%;
+        padding-left: 0;
     }
 
     .information-label {
         width: auto;
-        padding-right: 2rem;
+        padding-right: 3rem;
         line-height: unset;
     }
 
@@ -185,13 +185,80 @@ h1 {
 
     .stuff-wrapper {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 0fr);
     }
 
     .stuff-table {
-        border-spacing: 0.5rem 0.2rem;
+        border-spacing: 0 0.2rem;
         margin-top: unset;
         font-size: large;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+    h1 {
+        font-size: 200%;
+    }
+
+    .parameters {
+        display: unset;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1024px) {
+    .lefty {
+        width: 100%;
+    }
+
+    .righty {
+        padding-top: 10%;
+        padding-left: 0;
+    }
+
+    .information-label {
+        width: auto;
+        padding-right: 3rem;
+        line-height: unset;
+    }
+
+    .information-label p {
+        width: 125%;
+        margin-top: 0;
+    }
+
+    .information-table {
+        margin-top: unset;
+        border-spacing: 0 1.5rem;
+    }
+
+    .inner-table {
+        padding-right: 1rem;
+        padding-top: 0;
+        padding-bottom: 1rem;
+        border-spacing: 0 0.2rem;
+    }
+
+    .stuff-wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 0fr);
+    }
+
+    .stuff-table {
+        border-spacing: 0 0.2rem;
+        margin-top: unset;
+        font-size: large;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1800px) {
+    .information-label p {
+        width: 150%;
+    }
+}
+
+@media (min-width: 2750px) {
+    .footer {
+        float: right;
     }
 }
 
