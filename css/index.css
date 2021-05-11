@@ -205,7 +205,7 @@ h1 {
     }
 }
 
-@media (min-width: 801px) and (max-width: 1024px) {
+@media (min-width: 801px) and (max-width: 1200px) {
     .lefty {
         width: 100%;
     }
@@ -222,7 +222,7 @@ h1 {
     }
 
     .information-label p {
-        width: 125%;
+        width: 150%;
         margin-top: 0;
     }
 
@@ -248,11 +248,20 @@ h1 {
         margin-top: unset;
         font-size: large;
     }
+    .footer {
+        position: absolute;
+        bottom: 0;
+    }
 }
 
-@media (min-width: 1025px) and (max-width: 1800px) {
+@media (min-width: 1200px) and (max-width: 1800px) {
     .information-label p {
         width: 150%;
+    }
+
+    .footer {
+        position: absolute;
+        bottom: 0;
     }
 }
 
