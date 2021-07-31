@@ -1,5 +1,6 @@
-const cellColor = "#5A5A5A"
-const gridColor = "#000000"
+const cellColor = "#191919"
+const gridColor = "#25A7E0"
+//const gridColor = "#000000"
 
 let height = window.innerHeight
 let width = window.innerWidth
