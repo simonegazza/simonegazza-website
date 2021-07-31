@@ -1,10 +1,16 @@
 ##
 This respository is for my personal website, which you can see at [simonegazza.me](simonegazza.me)
 
-### `npm run pull`
+### `npm run start`
+Open the index page
+
+### `npm run pull-images`
 Download images
 
-### `npm run push`
+### `npm run push-images`
+Push images into the aws s3 bucket
+
+### `npm run push-all`
 Upload the app into the aws s3 corresponding bucket
 
 ## Why
