@@ -10,6 +10,7 @@ body {
 }
 
 .front {
+    float: left;
     height: 100%;
     width: 25%;
 }
@@ -28,4 +29,20 @@ body {
 
 .left-footer > *{
     width: 10%;
+}
+
+.sliders {
+    float: right;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 15%;
+}
+
+.sliders > label {
+    flex-basis: 25%;
+}
+
+.sliders > input {
+    flex-basis: 70%;
 }
