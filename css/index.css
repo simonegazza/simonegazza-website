@@ -59,7 +59,7 @@ a { color: white; }
 }
 
 .info-section {
-    height: auto; 
+    height: auto;
     padding-left: 5%;
     display: flex;
     align-items: baseline;
@@ -67,7 +67,7 @@ a { color: white; }
     padding-right: 15%;
 }
 
-.info-section > p, table {
+.info-section > p {
     padding-left: 5%;
 }
 
@@ -77,6 +77,13 @@ a { color: white; }
 }
 
 .stuff-table {
-    border-collapse:separate;
+    border-collapse: separate;
     border-spacing: 15% 15%;
+}
+
+canvas {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
 }

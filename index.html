@@ -10,10 +10,11 @@
 
         <link rel="icon" href="img/favicon.ico">
         <link rel="stylesheet" href="css/index.css">
-        
+
         <script src="js/game-of-life.js"></script>
     </head>
     <body>
+        <canvas id="canvas"></canvas>
         <noscript>Background available only if you enable javascript.</noscript>
         <div class="front">
             <div class="presentation">
@@ -22,9 +23,10 @@
                 <h1>Simone Gazza</h1>
             </div>
             <img src="img/face-pic.png" alt="My face goes here" style="width: 100%;"/>
-            <p>I am an Italian computer scientist, passionate about computability theory.
-                In my spare time I love to discover turing-complete systems and find ways to break them.
-                I also like web development and distributed systems.
+            <p>
+                I am an Italian computer scientist, passionate about computability theory and machine learning.
+                In my spare time I love to discover turing-complete systems and do data analysis.
+                I tipically mix them with web development and distributed systems.
             </p>
             <br>
             <div class="left-footer">
@@ -41,27 +43,27 @@
         </div>
         <div class="sliders">
             <label for="size">
-                Size: 
-            </label><input id="size" type="range" min="2" max="15" value="3">
+                Size:
+            </label><input id="size" type="range" min="2" max="15" value="5">
             <label for="sparsity">
                 Sparsity:
-            </label><input id="sparsity" type="range" min="2" max="100" value="7">
+            </label><input id="sparsity" type="range" min="2" max="100" value="40">
         </div>
         <div class="information">
             <div class="info-section">
                 <h2 class="banner">Education →</h2>
-                <p> 2021 / today <br> 
+                <p> 2021 / today <br>
                     <i>Master Degree <br>
                     in Computer Science</i><br>
                     <a href="https://www.unipr.it">Università degli studi di Parma</a></p>
-                <p> 2017 / 2021 <br> 
+                <p> 2017 / 2021 <br>
                     <i>Bachelor Degree <br>
                     in Computer Science</i><br>
                     <a href="https://www.unipr.it">Università degli studi di Parma</a></p>
             </div>
             <div class="info-section">
                 <h2 class="banner">Work →</h2>
-                <p> 2017 / 2020 <br> 
+                <p> 2017 / 2020 <br>
                     <i>AWS Cloud Solution Architect</i><br>
                     <a href="https://www.soluzionifutura.it">Soluzioni Futura</a></p>
             </div>
